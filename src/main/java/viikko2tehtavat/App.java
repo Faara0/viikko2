@@ -15,7 +15,9 @@ public class App
                     case 1:
                         System.out.println("Mitä siili sanoo: ");
                         String speak = sc.nextLine();
-                        System.out.println("Pikseli: " + speak );
+                        Hedgehog siili = new Hedgehog();
+                        String speaking = siili.speak(speak);
+                        System.out.println(speaking);
                         break;
                     case 2:
                         System.out.println("Valinta 2 toimii.");
