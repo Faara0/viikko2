@@ -5,7 +5,6 @@ public class App
 {
     public static void main( String[] args) {
         System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma");
-            System.out.print("Anna numero: ");
             Scanner sc = new Scanner(System.in);
             if(sc.hasNext()){
                 int i = 0; //user gives input which action they want
