@@ -1,4 +1,4 @@
-package viikko2tehtavat;
+package main;
 
 import java.util.Scanner;
 public class App 

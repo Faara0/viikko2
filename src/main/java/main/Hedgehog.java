@@ -1,4 +1,4 @@
-package viikko2tehtavat;
+package main;
 
 public class Hedgehog {
     public String name = "Pikseli";
