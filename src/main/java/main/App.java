@@ -1,5 +1,5 @@
 package main;
-
+1
 import java.util.Scanner;
 public class App 
 {
@@ -8,15 +8,15 @@ public class App
         do {
             System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma");
                 Scanner bufferedScanner = new Scanner(System.in);
-                    String input = bufferedScanner.nextLine();
-                    i = Integer.parseInt(input);
+                String input = bufferedScanner.nextLine();
+                i = Integer.parseInt(input);
                     if(i == 1) {
                         System.out.println("Mitä siili sanoo: ");
-                        Scanner SpeakScanner = new Scanner(System.in);
-                        String speak = SpeakScanner.nextLine();
-                        Hedgehog siili = new Hedgehog();
-                        String speaking = siili.speak(speak);
-                        System.out.println(speaking);
+                            Scanner SpeakScanner = new Scanner(System.in);
+                            String speak = SpeakScanner.nextLine();
+                            Hedgehog siili = new Hedgehog();
+                            String speaking = siili.speak(speak);
+                            System.out.println(speaking);
                     }
                     else if(i == 2) {
                         System.out.println("Valinta 2 toimii.");
@@ -35,4 +35,5 @@ public class App
                     }    
         } while(i > 0);     
     }
+
 }
