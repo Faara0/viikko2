@@ -8,8 +8,8 @@ public class App
         Scanner sc = new Scanner(System.in);
         boolean exit = false;
         while(!exit) {
+            
             System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma");
-    
             if(sc.hasNext()) {
                 int i = 0;
                 String stringInput = sc.nextLine();
@@ -23,9 +23,8 @@ public class App
                         Hedgehog siili = new Hedgehog();
                         String speaking = siili.speak(speak);
                         System.out.println(speaking);
-                        SpeakScanner.close();
                         break;
-                   case 2:
+                    case 2:
                        System.out.println("Valinta 2 toimii.");
                        break;
                     case 3:
