@@ -18,8 +18,7 @@ public class App
                 switch(i) {
                     case 1:
                         System.out.println("Mitä siili sanoo: ");
-                        Scanner SpeakInput = new Scanner(System.in);
-                        String speak = SpeakInput.nextLine();
+                        String speak = sc.nextLine();
                         Hedgehog siili = new Hedgehog();
                         String speaking = siili.speak(speak);
                         System.out.println(speaking);
