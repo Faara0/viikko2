@@ -17,19 +17,29 @@ public class App {
                     case 1:
                         System.out.println("Mitä siili sanoo:");
                         String GivenLine = sc.nextLine();
-                        Hedgehog h = new Hedgehog();
-                        String speaking = h.line(GivenLine);
+                        if (GivenLine.equals("")){
+                            Hedgehog emptySpeak = new Hedgehog();
+                            String emptyLine = emptySpeak.emptyLine("Olen ", " ja ikäni on ", " mutta antaisitko silti syötteen?");
+                            System.out.println(emptyLine);
+                        } else { 
+                        Hedgehog line = new Hedgehog();
+                        String speaking = line.Line(GivenLine);
                         System.out.println(speaking);
+                        }
                         break;
                     case 2:
-                        System.out.println("Uusi siili");
+                        System.out.println("Anna siilin nimi:");
+                        String givenName = sc.nextLine();
+                        System.out.println("Anna siilin ikä:");
+                        String givenAge = sc.nextLine();
+                        int NewAge = Integer.parseInt(givenAge);
                         break;
                     case 3:
                         System.out.println("Kuinka monta kierrosta?");
                         String loopAmount = sc.nextLine();
                         int loops = Integer.parseInt(loopAmount);
-                        Hedgehog l = new Hedgehog();
-                        String Name = l.Loops();
+                        Hedgehog loop = new Hedgehog();
+                        String Name = loop.Loops();
                         for(int i = 1; i<= loops; i++){
                            System.out.println(Name+ " juoksee kovaa vauhtia!");
                         }
@@ -42,8 +52,7 @@ public class App {
                         System.out.println("Syöte oli väärä");
                         break;
                 }
-            }
-        //System.out.println("Olen <siilin nimi> ja ikäni on <siili ikä>, mutta antaisitko silti syötteen?")   
+            }  
         }
     sc.close();
     }
