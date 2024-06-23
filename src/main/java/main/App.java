@@ -8,7 +8,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         boolean exit = false;
         while(!exit){ 
-            System.out.println( "1) Pistä siili puhumaan, 2) Luo uusi siili, 3 Juoksuta siiliä, 0 Lopeta ohjelma" );
+            System.out.println( "1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma" );
             if(sc.hasNext()){
                 int choise = 0;
                 String StringInput = sc.nextLine();
