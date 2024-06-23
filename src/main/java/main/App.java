@@ -19,7 +19,7 @@ public class App {
                         String GivenLine = sc.nextLine();
                         if (GivenLine.equals("")){
                             Hedgehog emptySpeak = new Hedgehog();
-                            String emptyLine = emptySpeak.emptyLine("Olen ", " ja ikäni on vuotta ", " mutta antaisitko silti syötteen?");
+                            String emptyLine = emptySpeak.emptyLine("Olen ", " ja ikäni on ", " vuotta mutta antaisitko silti syötteen?");
                             System.out.println(emptyLine);
                         } else { 
                         Hedgehog line = new Hedgehog();
