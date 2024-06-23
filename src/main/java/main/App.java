@@ -26,6 +26,13 @@ public class App {
                         break;
                     case 3:
                         System.out.println("Kuinka monta kierrosta?");
+                        String loopAmount = sc.nextLine();
+                        int loops = Integer.parseInt(loopAmount);
+                        Hedgehog l = new Hedgehog();
+                        String Name = l.Loops();
+                        for(int i = 1; i<= loops; i++){
+                           System.out.println(Name+ " juoksee kovaa vauhtia!");
+                        }
                         break;
                     case 0:
                         System.out.println("Kiitos ohjelman käytöstä.");

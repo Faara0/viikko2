@@ -8,5 +8,9 @@ public class Hedgehog {
     String line(String Line){
         return Name + ": " + Line;
     }
+
+    String Loops(){
+        return Name;
+    }
 }
 
